@@ -5,7 +5,7 @@ public class InorderTraversal {
         Stack<TreeNode> stack = new Stack<TreeNode>();
         if(root == null) return result;
         TreeNode current = root;
-        while(root!=null || !stack.isEmpty()){
+        while(current!=null || !stack.isEmpty()){
             while(current!=null){
                 stack.push(current);
                 current = current.left;
