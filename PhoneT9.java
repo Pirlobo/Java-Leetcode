@@ -22,18 +22,28 @@ public class PhoneT9 {
             "tuv",
             "wxyz"
         };
-        result.add("");
-        for(int i = 0; i < digits.length(); i++){
-            int index = Character.getNumericValue(digits.charAt(i));
-            char[] array = mapping[index].toCharArray();
-            while(result.peek().length() == i) {
-                String previous = result.remove();
-                for(char c : array){
-                    result.add(previous + c);
-                }
-            }
-        }
+        // result.add("");
+        // for(int i = 0; i < digits.length(); i++){
+        //     int index = Character.getNumericValue(digits.charAt(i));
+        //     char[] array = mapping[index].toCharArray();
+        //     while(result.peek().length() == i) {
+        //         String previous = result.remove();
+        //         for(char c : array){
+        //             result.add(previous + c);
+        //         }
+        //     }
+        // }
+            letterCombinations(result, digits, "", 0, mapping);
         return result;
     }
-   
+   public static void letterCombinations(List<String> result, String digits, String current, int index, String[] mapping) {
+       if(index == digits.length()) {
+           result.add(current);
+           return;
+       }
+       String letters = mapping[digits.charAt(index) - '0'];
+       for (int i = 0; i < letters.length(); i++) {
+           letterCombinations(result, digits, current + letters.charAt(i), index+1, mapping);
+       }
+   }
 }
