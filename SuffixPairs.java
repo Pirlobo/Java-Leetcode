@@ -1,7 +1,7 @@
 import java.util.*;
 public class SuffixPairs {
     public static void main(String[] args) {
-        String[] input = {"back", "backdoor", "gammon", "backgammon", "comeback", "come", "door"};
+        String[] input = {"back", "backdoor", "gammback", "backgammon", "comeback", "come", "door"};
         System.out.println(suffixPairs(input));
     }
     public static int suffixPairs(String[] input) {
