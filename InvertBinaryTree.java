@@ -1,5 +1,11 @@
 public class InvertBinaryTree {
-    public TreeNode invertTree(TreeNode root) {
+    public static void main(String[] args) {
+        TreeNode node = new TreeNode(3);
+        node.left = new TreeNode(2);
+        node.right = new TreeNode(4);
+        invertTree(node);
+    }
+    public static TreeNode invertTree(TreeNode root) {
         if (root == null)
             return null;
         TreeNode left = invertTree(root.left);

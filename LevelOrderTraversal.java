@@ -2,6 +2,11 @@ import java.util.*;
 
 public class LevelOrderTraversal {
     public List<List<Integer>> levelOrder(TreeNode root) {
+        // result list {1,2,3, 4, 5, 6,7}
+        // queue 
+        //  1
+        //2     3
+    // 4    5  6   7
         List<List<Integer>> list = new ArrayList<>();
         if (root == null)
             return list;

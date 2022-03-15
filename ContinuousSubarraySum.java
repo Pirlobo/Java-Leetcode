@@ -1,8 +1,8 @@
 import java.util.*;
 public class ContinuousSubarraySum {
     public static void main(String[] args) {
-        int[] array = {1,3,1};
-        System.out.println(checkSubarraySum(array, 4));
+        int[] array = {23,2,4,6,6};
+        System.out.println(checkSubarraySum(array, 7));
     }
     public static int checkSubarraySum(int[] nums, int k) {
         HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();

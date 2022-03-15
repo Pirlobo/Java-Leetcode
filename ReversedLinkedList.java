@@ -1,6 +1,9 @@
 
 public class ReversedLinkedList {
     public ListNode reverseList(ListNode head) {
+        //                     prev  head       
+        // prev <-  1      <-   2    3      
+        // 
         //         head    nexthead
         // null -> 1 ->     2  ->    3
         ListNode previous = null;

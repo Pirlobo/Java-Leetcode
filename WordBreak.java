@@ -1,12 +1,15 @@
 import java.util.*;
 public class WordBreak {
     public static void main(String[] args) {
-        String s = "cars";
+        String s = "what San Francisco is SAP";
         List<String> wordDict = new ArrayList<String>();
         // wordDict.add("car");
-        wordDict.add("ca");
-        wordDict.add("rs");
-        wordBreak(s, wordDict);
+        wordDict.add("what");
+        wordDict.add("is");
+        wordDict.add("San Francisco");
+        wordDict.add("SAP");
+        wordDict.add("Job");
+        System.out.println(wordBreak(s, wordDict));
     }
     public static boolean wordBreak(String s, List<String> wordDict) {
         boolean[] isWordBreak = new boolean[s.length() + 1];

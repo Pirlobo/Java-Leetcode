@@ -1,6 +1,11 @@
 import java.util.*;
 public class InorderTraversal {
     public List<Integer> inorderTraversal(TreeNode root) {
+        // result list {1,2,3, 4, 5, 6,7}
+        // queue 
+        //  1
+        //2     3
+    // 4    5  6   7
         List<Integer> result = new ArrayList<Integer>();
         Stack<TreeNode> stack = new Stack<TreeNode>();
         if(root == null) return result;
