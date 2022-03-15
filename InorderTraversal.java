@@ -1,8 +1,8 @@
 import java.util.*;
 public class InorderTraversal {
     public List<Integer> inorderTraversal(TreeNode root) {
-        // result list {1,2,3, 4, 5, 6,7}
-        // queue 
+        // result list {4, 2, 5, 1, 6, 3}
+        
         //  1
         //2     3
     // 4    5  6   7
