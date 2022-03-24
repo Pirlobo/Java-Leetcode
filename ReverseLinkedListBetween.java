@@ -1,4 +1,4 @@
-public class ReverseLinkedListWithRange {
+public class ReverseLinkedListBetween {
     public ListNode reverseBetween(ListNode head, int left, int right) {
         if (head == null) {
             return null;

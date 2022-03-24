@@ -1,7 +1,7 @@
 import java.util.*;
 public class Subset {
     public static void main(String[] args) {
-        int[] arr = {1,2,3};
+        int[] arr = {-1,-2,-3,3};
         System.out.println(subsets(arr));
     }
     public static List<List<Integer>> subsets(int[] nums) {
@@ -18,10 +18,5 @@ public class Subset {
             current.remove(current.size() - 1);
         }
 
-    }
-    
-    public static Integer[] getSubArray (Integer[] original, int start, int end) {
-        Integer[] result = Arrays.copyOfRange(original, start, end + 1);
-        return result;
     }
 }

@@ -2,7 +2,7 @@ import java.util.*;
 public class CombinationSum {
     public static void main(String[] args) {
         int[] candidates = {2,3,6,7};
-        combinationSum(candidates, 7);
+        System.out.println(combinationSum(candidates, 7));
     }
     public static List<List<Integer>> combinationSum(int[] candidates, int target) {
         if(candidates.length == 0) return null;
@@ -22,7 +22,7 @@ public class CombinationSum {
             if(target >= candidates[i]){
                 current.add(candidates[i]);
                 backTracking(candidates, target - candidates[i], i, current, result);
-                current.remove(new Integer(candidates[i]));
+                current.remove(Integer.valueOf(candidates[i]));
             }
         }
         

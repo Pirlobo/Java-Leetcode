@@ -17,6 +17,7 @@ public class Cisco {
 				x /= 10;
 			}
 			if(s==numY){
+				System.out.println(s);
 				answer++;
 			}
 		}
