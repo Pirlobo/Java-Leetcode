@@ -4,15 +4,13 @@ public class HouseRobber {
         System.out.println(rob(nums));
     }
     public static int rob(int[] nums) {
-        int rob1 = 0,rob2 = 0;
-        if (nums.length == 0) return 0;
-        
-        for(int i = 0 ; i < nums.length; i++) {
-           int current = nums[i];
-           int tempt = Math.max(current + rob1, rob2);
-           rob1 = rob2;
-           rob2 = tempt; 
-        }  
-        return rob2;
+        int[] dp = new int[nums.length + 1];
+
+        dp[0] = 0;
+        dp[1] = nums[0];
+        for (int i = 1; i < nums.length; i++) {
+            dp[i+1] = Math.max(dp[i], nums[i] + dp[i-1]);
+        }
+        return dp[nums.length];
     }
 }

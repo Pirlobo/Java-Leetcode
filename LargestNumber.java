@@ -1,9 +1,10 @@
 import java.util.*;
 public class LargestNumber {
   public static void main(String[] args) {
-      int[] numbers = {3,30,34};
+      int[] numbers = {3,30,34,9};
       // 330 vs 303 => 3 30 
       // 3034 vs 3430 => 34 30
+      
       // 334 vs 343 => 34 3 30
       System.out.println(largestNumber(numbers));
   }  
