@@ -1,6 +1,10 @@
 public class WordSearch {
+    public static void main(String[] args) {
+        char[][] board = {{'a', 'b', 'c','e'}, {'s', 'f', 'c','s'}, {'a','d','e','e'}};
+        System.out.println(exist(board, "abcced"));
+    }
     static boolean[][] visited;
-    public boolean exist(char[][] board, String word) {
+    public static boolean exist(char[][] board, String word) {
         int rows = board.length;
         int columns = board[0].length;
         visited = new boolean[rows][columns];
