@@ -1,3 +1,5 @@
+// With Duc Tan Hoang, Dung Vuong
+
 import java.util.Scanner;
 import java.util.*;
 public class CS166 {

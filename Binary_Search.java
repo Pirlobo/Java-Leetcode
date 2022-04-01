@@ -21,7 +21,7 @@ public class Binary_Search {
         return index;
     }
     public static void main(String[] args) {
-        int[] nums = {1,2,3,4,5,6,7,8,9,10};
-        System.out.println(search(nums, 3));
+        int[] nums = {1,3,5,6};
+        System.out.println(search(nums, 2));
     }
 }

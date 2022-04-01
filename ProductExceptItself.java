@@ -1,7 +1,7 @@
 import java.util.*;
 public class ProductExceptItself {
     public static void main(String[] args) {
-        int[] nums = {2,1,3,4};
+        int[] nums = {1,2,3,4};
         int[] answer = duma(nums);
         for (int i : answer) {
             System.out.println(i);
