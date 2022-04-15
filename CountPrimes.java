@@ -5,22 +5,19 @@ public class CountPrimes {
         countPrimes(n);
     }
     public static int countPrimes(int n) {
-        List<Integer> list = new ArrayList<Integer>();
-        for(int i = 2 ; i < n; i++){
-            if(isPrimeNumber(i)){
-                list.add(i);
+        if(n == 0 || n == 1) return 0;
+        int result = 0;
+        boolean[] table = new boolean[n];
+        for(int i = 2; i < n; i++) {
+            int j = 1;
+            if(!table[i]) result++;
+            while(i * j < n) {
+                table[i*j] = true;
+                j++;
             }
         }
-        return list.size();
-    }
-    public static boolean isPrimeNumber(int n){
-        boolean isPrime = true;
-        for(int i = 2; i <= n/2; i++){
-            if(n%i == 0) return false;
-            else{
-                continue;
-            }
+            return result;
         }
-        return isPrime;
-    }
 }
+
+
