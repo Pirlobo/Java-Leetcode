@@ -2,7 +2,7 @@ import java.util.*;
 public class NextGreaterElementI {
     public static void main(String[] args) {
         int[] nums1 = {4,1,2};
-        int[] nums2 = {1,3,4,2};
+        int[] nums2 = {1,3,4,2,5};
         // As the end, the result should be [-1, 3, -1]
         System.out.println(nextGreaterElement(nums1, nums2));
         

@@ -3,7 +3,7 @@ import java.util.Arrays;
 public class MaximumSubArray {
     public static void main(String[] args) {
         // keep adding to get current Sum, if nums[i] > current Sum, then skip to i.
-        int[] nums = {-2,1,-3,4,-1,2,1,-5,4};
+        int[] nums = {1,-1,2,0};
         System.out.println(maxSubArray(nums));
     }
     public static int maxSubArray(int[] nums) {

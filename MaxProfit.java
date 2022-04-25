@@ -1,7 +1,7 @@
 import java.util.*;
 public class MaxProfit {
     public static void main(String[] args) {
-        int[] prices = {1,2};
+        int[] prices = {1,7,2};
         maxProfit(prices);
     }
     public static int maxProfit(int[] prices) {
